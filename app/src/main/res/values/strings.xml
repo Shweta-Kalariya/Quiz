@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!--Question 1-->
+    <string name="question_1">Which essential items, from the following, do you need when hiking?</string>
+    <!--Answer option a of Question 1-->
+    <string name="q_1_opt_a">Gaiters/map/binoculars/survival blanket</string>
+    <!--Answer option b of Question 1-->
+    <string name="q_1_opt_b">Whistle/map</string>
+    <!--Answer option c of Question 1-->
+    <string name="q_1_opt_c">First aid kit/survival blanket</string>
+    <!--Answer option d of Question 1-->
+    <string name="q_1_opt_d">Whistle/pole/survival blanket</string>
+
+    <!--Question 2-->
+    <string name="question_2">What is the ideal hiking pole height (in degrees)?</string>
+    <!--Answer of Question 2-->
+    <string name="q_2_ans">90</string>
+
+    <!--Question 3-->
+    <string name="question_3">What do I do in the case of a thunderstorm in the mountain?</string>
+    <!--Answer option a of Question 3-->
+    <string name="q_3_opt_a">Take shelter under a tree</string>
+    <!--Answer option b of Question 3-->
+    <string name="q_3_opt_b">Run to descend as quickly as possible</string>
+    <!--Answer option c of Question 3-->
+    <string name="q_3_opt_c">Catch up with hikers within the group</string>
+    <!--Answer option d of Question 3-->
+    <string name="q_3_opt_d">I leave my poles behind</string>
+
+    <!--Question 4-->
+    <string name="question_4">Where should be your backpack strap placed?</string>
+    <!--Answer option a of Question 4-->
+    <string name="q_4_opt_a">Level with my sides</string>
+    <!--Answer option b of Question 4-->
+    <string name="q_4_opt_b">Level with my belly button</string>
+    <!--Answer option c of Question 4-->
+    <string name="q_4_opt_c">Level with my hips</string>
+    <!--Answer option d of Question 4-->
+    <string name="q_4_opt_d">Level with my buttocks</string>
+
+    <!--Question 5-->
+    <string name="question_5">On an ordnance survey map, in the case of a steep gradient, the level curves are</string>
+    <!--Answer option a of Question 5-->
+    <string name="q_5_opt_a">In bold</string>
+    <!--Answer option b of Question 5-->
+    <string name="q_5_opt_b">Very close together</string>
+    <!--Answer option c of Question 5-->
+    <string name="q_5_opt_c">In grey</string>
+    <!--Answer option d of Question 5-->
+    <string name="q_5_opt_d">In dotted lines</string>
+
+    <!--Question 6-->
+    <string name="question_6">The poles decrease the impact of the backpack weight on the body by (in %)</string>
+    <!--Answer option a of Question 6-->
+    <string name="q_6_ans">25</string>
+
+    <!--Submit Button Text-->
+    <string name="submit">Submit</string>
+
+    <!--Success Message-->
+    <string name="success_message">Congratulations! You scored 100%</string>
+    <!--String value for invalid answer-->
+    <string name="invalid_answer">Invalid Answer</string>
+    <!--Correct Answer String-->
+    <string name="correct_ans_string">Correct answers are:</string>
+    <!--Question String-->
+    <string name="question_string">Question</string>
+    <!--Answer String-->
+    <string name="answer_string">Answer</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question_1">¿Qué elementos esenciales, a partir de los siguientes, necesitas al ir de excursión?</string>
+    <string name="q_1_opt_a">Polainas / mapa / binoculares / manta de supervivencia</string>
+    <string name="q_1_opt_b">Silbato / mapa</string>
+    <string name="q_1_opt_c">Kit de primeros auxilios / manta de supervivencia</string>
+    <string name="q_1_opt_d">Silbato / poste / manta de supervivencia</string>
+    <string name="question_2">¿Cuál es la altura ideal del poste de senderismo (en grados)?</string>
+    <string name="question_3">¿Qué hago en el caso de una tormenta eléctrica en la montaña?</string>
+    <string name="q_3_opt_a">Refúgiate bajo un árbol</string>
+    <string name="q_3_opt_b">Corre para descender lo más rápido posible</string>
+    <string name="q_3_opt_c">Póngase al día con los excursionistas dentro del grupo</string>
+    <string name="q_3_opt_d">Dejo mis polos detrás</string>
+    <string name="question_4">¿Dónde debe colocarse la correa de la mochila?</string>
+    <string name="q_4_opt_a">Nivel con mis lados</string>
+    <string name="q_4_opt_b">Nivel con mi ombligo</string>
+    <string name="q_4_opt_c">Nivel con mis caderas</string>
+    <string name="q_4_opt_d">Nivel con mis nalgas</string>
+    <string name="question_5">En un mapa topográfico de artillería, en el caso de un gradiente pronunciado, las curvas de nivel son</string>
+    <string name="q_5_opt_a">"En negrita "</string>
+    <string name="q_5_opt_b">Muy juntos</string>
+    <string name="q_5_opt_c">"En gris "</string>
+    <string name="q_5_opt_d">En líneas punteadas</string>
+    <string name="question_6">Los polos disminuyen el impacto del peso de la mochila en el cuerpo</string>
+    <string name="submit">Enviar</string>
+    <string name="success_message">¡Felicitaciones! Has obtenido el 100%</string>
+    <string name="invalid_answer">"Respuesta invalida "</string>
+    <string name="question_string">Pregunta</string>
+    <string name="answer_string">Responder</string>
+</resources>

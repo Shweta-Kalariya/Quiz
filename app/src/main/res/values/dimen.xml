@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Spacing dimensions for Questions-->
+    <dimen name="questionMarginLeft">16dp</dimen>
+    <dimen name="questionMarginTop">16dp</dimen>
+
+    <!--Spacing dimensions for Answers-->
+    <dimen name="ansMarginLeft">25dp</dimen>
+
+    <!--Font dimensions-->
+    <dimen name="appFontSize">14sp</dimen>
+
+    <!--Edit Text dimensions-->
+    <dimen name="edit_text_marginLeft">35dp</dimen>
+
+    <!--Button Dimensions-->
+    <dimen name="buttonMarginLeft">10dp</dimen>
+    <dimen name="buttonMarginTop">20dp</dimen>
+
+    <!--ScrollView Dimensions-->
+    <dimen name="scrollViewPaddingLeft">5dp</dimen>
+    <dimen name="scrollViewPaddingRight">15dp</dimen>
+</resources>
