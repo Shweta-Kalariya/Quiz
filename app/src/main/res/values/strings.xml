@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">Hiking Quiz</string>
 
     <!--Question 1-->
     <string name="question_1">Which essential items, from the following, do you need when hiking?</string>
