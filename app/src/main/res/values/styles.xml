@@ -1,11 +1,88 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="counterStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/questionMarginLeft</item>
+        <item name="android:paddingTop">@dimen/questionMarginTop</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/appFontSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="questionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">3</item>
+        <item name="android:paddingLeft">@dimen/questionMarginLeft</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/appFontSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="optionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ansMarginLeft</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/appFontSize</item>
+    </style>
+
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/appFontSize</item>
+    </style>
+
+    <style name="radioGroupStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ansMarginLeft</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/buttonMarginLeft</item>
+        <item name="android:layout_marginTop">@dimen/buttonMarginTop</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="buttonStyle.Submit" parent="@style/buttonStyle">
+        <item name="android:onClick">takeQuiz</item>
+        <item name="android:text">@string/submit</item>
+
+    </style>
+
+    <style name="buttonStyle.Reset" parent="@style/buttonStyle">
+        <item name="android:onClick">resetQuiz</item>
+        <item name="android:text">@string/reset</item>
+
+    </style>
+
+    <style name="horizontalLinearLayoutSTyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="verticalLinearLayoutSTyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="scrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/scrollViewPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/scrollViewPaddingRight</item>
+    </style>
 </resources>

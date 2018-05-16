@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hiking Quiz</string>
+    <string name="app_name">\t Hiking Quiz</string>
 
     <!--Question 1-->
     <string name="question_1">Which essential items, from the following, do you need when hiking?</string>
@@ -57,6 +57,15 @@
 
     <!--Submit Button Text-->
     <string name="submit">Submit</string>
+
+    <!--Reset Button Text-->
+    <string name="reset">Reset</string>
+
+    <!--Quiz Reseting Message-->
+    <string name="quiz_resetting_message">Resetting quiz</string>
+
+    <!--Quiz Reset Message-->
+    <string name="quiz_reset_message">Quiz reset</string>
 
     <!--Success Message-->
     <string name="success_message">Congratulations! You scored 100%</string>

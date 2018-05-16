@@ -1,330 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.quiz.MainActivity"
-    android:paddingRight="@dimen/scrollViewPaddingRight"
-    android:paddingLeft="@dimen/scrollViewPaddingLeft" >
+    style="@style/scrollViewStyle"
+    tools:context="com.example.android.quiz.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+    <LinearLayout style="@style/verticalLinearLayoutSTyle">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+                style="@style/counterStyle"
+                android:text="1" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_1"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"
-                android:lines="3" />
+                style="@style/questionStyle"
+                android:text="@string/question_1" />
 
         </LinearLayout>
 
         <CheckBox
             android:id="@+id/one_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q_1_opt_a"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize"
-            android:layout_marginLeft="@dimen/ansMarginLeft" />
+            style="@style/optionStyle"
+            android:text="@string/q_1_opt_a" />
 
         <CheckBox
             android:id="@+id/one_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q_1_opt_b"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize"
-            android:layout_marginLeft="@dimen/ansMarginLeft" />
+            style="@style/optionStyle"
+            android:text="@string/q_1_opt_b" />
 
         <CheckBox
             android:id="@+id/one_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q_1_opt_c"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize"
-            android:layout_marginLeft="@dimen/ansMarginLeft" />
+            style="@style/optionStyle"
+            android:text="@string/q_1_opt_c" />
 
         <CheckBox
             android:id="@+id/one_d"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/q_1_opt_d"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize"
-            android:layout_marginLeft="@dimen/ansMarginLeft" />
+            style="@style/optionStyle"
+            android:text="@string/q_1_opt_d" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_2"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"
-                android:lines="3" />
+                style="@style/counterStyle"
+                android:text="2" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/question_2" />
         </LinearLayout>
 
         <EditText
             android:id="@+id/two_ans"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/optionStyle"
             android:layout_marginLeft="@dimen/edit_text_marginLeft"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize" />
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_3"
-                android:textSize="@dimen/appFontSize"
-                android:lines="3"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+                style="@style/counterStyle"
+                android:text="3" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/question_3" />
         </LinearLayout>
+
         <RadioGroup
             android:id="@+id/three_radio_grp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/ansMarginLeft" >
+            style="@style/radioGroupStyle">
+
             <RadioButton
                 android:id="@+id/three_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_3_opt_a"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_3_opt_a" />
+
             <RadioButton
                 android:id="@+id/three_b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_3_opt_b"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_3_opt_b" />
+
             <RadioButton
                 android:id="@+id/three_c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_3_opt_c"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_3_opt_c" />
+
             <RadioButton
                 android:id="@+id/three_d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_3_opt_d"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_3_opt_d" />
         </RadioGroup>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_4"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"
-                android:lines="3" />
+                style="@style/counterStyle"
+                android:text="4" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/question_4" />
         </LinearLayout>
 
         <RadioGroup
             android:id="@+id/four_radio_grp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/ansMarginLeft" >
+            style="@style/radioGroupStyle">
+
             <RadioButton
                 android:id="@+id/four_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_4_opt_a"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_4_opt_a" />
+
             <RadioButton
                 android:id="@+id/four_b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_4_opt_b"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_4_opt_b" />
+
             <RadioButton
                 android:id="@+id/four_c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_4_opt_c"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_4_opt_c" />
+
             <RadioButton
                 android:id="@+id/four_d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_4_opt_d"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_4_opt_d" />
         </RadioGroup>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+                style="@style/counterStyle"
+                android:text="5" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_5"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"
-                android:lines="3" />
+                style="@style/questionStyle"
+                android:text="@string/question_5" />
         </LinearLayout>
 
         <RadioGroup
             android:id="@+id/five_radio_grp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/ansMarginLeft" >
+            android:layout_marginLeft="@dimen/ansMarginLeft">
+
             <RadioButton
                 android:id="@+id/five_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_5_opt_a"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_5_opt_a" />
+
             <RadioButton
                 android:id="@+id/five_b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_5_opt_b"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_5_opt_b" />
+
             <RadioButton
                 android:id="@+id/five_c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_5_opt_c"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_5_opt_c" />
+
             <RadioButton
                 android:id="@+id/five_d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q_5_opt_d"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/appFontSize" />
+                style="@style/radioButtonStyle"
+                android:text="@string/q_5_opt_d" />
         </RadioGroup>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:paddingTop="@dimen/questionMarginTop"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
+
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/questionMarginLeft"
-                android:text="@string/question_6"
-                android:textSize="@dimen/appFontSize"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"
-                android:lines="3" />
+                style="@style/counterStyle"
+                android:text="6" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/question_6" />
         </LinearLayout>
 
         <EditText
             android:id="@+id/six_ans"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/optionStyle"
             android:layout_marginLeft="@dimen/edit_text_marginLeft"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/appFontSize" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/buttonMarginTop"
-            android:layout_marginLeft="@dimen/buttonMarginLeft"
-            android:text="@string/submit"
-            android:onClick="takeQuiz" />
+        <LinearLayout style="@style/horizontalLinearLayoutSTyle">
+
+            <Button style="@style/buttonStyle.Reset" />
+
+            <Button style="@style/buttonStyle.Submit" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

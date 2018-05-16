@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Set icons on action bar
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.hike_logo);
+        getSupportActionBar().setIcon(R.mipmap.logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+        //Set layout
         setContentView(R.layout.activity_main);
     }
 
@@ -69,16 +71,21 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private void displayMessage() {
+    private void displayMessage(String m) {
         int duration = Toast.LENGTH_SHORT;
         CharSequence message;
-        if(errorMessage == "") {
-            message = (CharSequence) getString(R.string.success_message);
+        if(m == "") {
+            if (errorMessage == "") {
+                message = (CharSequence) getString(R.string.success_message);
+                populateMessage(message, 1);
+                refreshApplication();
+            } else {
+                populateMessage(errorMessage, 2);
+                populateMessage(correctAnswers, 1);
+            }
+        } else {
+            message = (CharSequence) m;
             populateMessage(message, 1);
-            refreshApplication();
-        }else {
-            populateMessage(errorMessage, 2);
-            populateMessage(correctAnswers, 1);
         }
     }
 
@@ -95,6 +102,12 @@ public class MainActivity extends AppCompatActivity {
     public void takeQuiz(View view){
         resetVariables();
         validateAnswers(view);
-        displayMessage();
+        displayMessage("");
+    }
+
+    public void resetQuiz(View view){
+        displayMessage(getString(R.string.quiz_resetting_message));
+        refreshApplication();
+        displayMessage(getString(R.string.quiz_reset_message));
     }
 }
