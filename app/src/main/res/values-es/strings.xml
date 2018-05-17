@@ -24,8 +24,10 @@
     <string name="q_5_opt_d">En líneas punteadas</string>
     <string name="question_6">Los polos disminuyen el impacto del peso de la mochila en el cuerpo</string>
     <string name="submit">Enviar</string>
-    <string name="success_message">¡Felicitaciones! Has obtenido el 100%</string>
-    <string name="invalid_answer">"Respuesta invalida "</string>
     <string name="question_string">Pregunta</string>
     <string name="answer_string">Responder</string>
+    <string name="reset">Reiniciar</string>
+    <string name="quiz_resetting_message">Restablecer cuestionario</string>
+    <string name="quiz_reset_message">Restablecimiento</string>
+    <string name="score_string"><b>Su puntaje es: %1$d/%2$d </b></string>
 </resources>

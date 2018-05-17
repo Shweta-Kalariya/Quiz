@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private void validateAnswers(View view){
         String ans2 = getString(R.string.q_2_ans);
         String ans6 = getString(R.string.q_6_ans);
-        if((((CheckBox)findViewById(R.id.one_a)).isChecked() == false
-                && ((CheckBox)findViewById(R.id.one_d)).isChecked() == false
-                && ((CheckBox)findViewById(R.id.one_b)).isChecked() == true
-                && ((CheckBox)findViewById(R.id.one_c)).isChecked() == true)) {
+        if((!((CheckBox)findViewById(R.id.one_a)).isChecked()
+                && !((CheckBox)findViewById(R.id.one_d)).isChecked()
+                && ((CheckBox)findViewById(R.id.one_b)).isChecked()
+                && ((CheckBox)findViewById(R.id.one_c)).isChecked())) {
             quizScore++;
         }
 
@@ -68,15 +68,13 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String m) {
         int duration = Toast.LENGTH_SHORT;
         CharSequence message;
-        if(m == "") {
-            message = "Your scored:" + quizScore +"/"+ TOTAL_SCORE ;
+        if(m.equals("")) {
+            message = getString(R.string.score_string, quizScore, TOTAL_SCORE);
             populateMessage(message, 1);
-
         } else {
             message = (CharSequence) m;
             populateMessage(message, 1);
         }
-
     }
 
     private void refreshApplication(){

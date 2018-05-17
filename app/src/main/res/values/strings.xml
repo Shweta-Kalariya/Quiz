@@ -67,15 +67,10 @@
     <!--Quiz Reset Message-->
     <string name="quiz_reset_message">Quiz reset</string>
 
-    <!--Success Message-->
-    <string name="success_message">Congratulations! You scored 100%</string>
-    <!--String value for invalid answer-->
-    <string name="invalid_answer">Invalid Answer</string>
-    <!--Correct Answer String-->
-    <string name="correct_ans_string">Correct answers are:</string>
+    <!--Score String-->
+    <string name="score_string"><b>Your Score is : %1$d/%2$d </b></string>
     <!--Question String-->
     <string name="question_string">Question</string>
     <!--Answer String-->
     <string name="answer_string">Answer</string>
-
 </resources>
