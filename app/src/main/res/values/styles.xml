@@ -21,6 +21,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:lines">3</item>
         <item name="android:paddingLeft">@dimen/questionMarginLeft</item>
+        <item name="android:layout_marginBottom">@dimen/questionMarginBottom</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">@dimen/appFontSize</item>
         <item name="android:textStyle">bold</item>

@@ -3,6 +3,7 @@
     <!--Spacing dimensions for Questions-->
     <dimen name="questionMarginLeft">16dp</dimen>
     <dimen name="questionMarginTop">16dp</dimen>
+    <dimen name="questionMarginBottom">10dp</dimen>
 
     <!--Spacing dimensions for Answers-->
     <dimen name="ansMarginLeft">25dp</dimen>
