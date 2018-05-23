@@ -77,9 +77,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void refreshApplication(){
-        finish();
-        startActivity(getIntent());
+    private void resetAllFields(){
+        ((EditText)findViewById(R.id.two_ans)).setText(null);
+        ((EditText)findViewById(R.id.six_ans)).setText(null);
+        ((RadioGroup)findViewById(R.id.three_radio_grp)).clearCheck();
+        ((RadioGroup)findViewById(R.id.four_radio_grp)).clearCheck();
+        ((RadioGroup)findViewById(R.id.five_radio_grp)).clearCheck();
+        ((CheckBox) findViewById(R.id.one_a)).setChecked(false);
+        ((CheckBox) findViewById(R.id.one_b)).setChecked(false);
+        ((CheckBox) findViewById(R.id.one_c)).setChecked(false);
+        ((CheckBox) findViewById(R.id.one_d)).setChecked(false);
     }
 
     private void resetVariables(){
@@ -93,8 +100,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetQuiz(View view){
-        displayMessage(getString(R.string.quiz_resetting_message));
-        refreshApplication();
+        resetAllFields();
         displayMessage(getString(R.string.quiz_reset_message));
     }
 }
